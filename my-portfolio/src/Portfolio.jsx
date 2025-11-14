@@ -335,7 +335,7 @@ border-yellow-500/20 hover:border-yellow-500/50 transition-all h-full flex flex-
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold mb-2">Software Engineer</h3>
-                    <p className="text-purple-400 mb-3">1+ Years Experience</p>
+                    <p className="text-purple-400 mb-3">1.5+ Years Experience</p>
                     <p className="text-gray-400 leading-relaxed">
                       Led full-stack development projects, implemented AI-driven solutions, 
                       and architected scalable cloud infrastructure for clients.
