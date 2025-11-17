@@ -19,6 +19,8 @@ export default function Portfolio() {
     about: useRef(null),
     projects: useRef(null),
     experience: useRef(null),
+    education: useRef(null),
+    // certifications: useRef(null),
     contact: useRef(null),
   };
 
@@ -59,7 +61,7 @@ export default function Portfolio() {
         <div className="max-w-7xl mx-auto px-8">
           <div className="flex justify-between items-center py-4">
             <div className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-              Sandhiya.dev
+              Sandhiya.S
             </div>
             <ul className="flex gap-8 text-sm font-medium">
               {Object.keys(sectionRefs).map((sec) => (
@@ -409,6 +411,191 @@ border-yellow-500/20 hover:border-yellow-500/50 transition-all h-full flex flex-
         </div>
       </section>
 
+         {/* Education */}
+      <section ref={sectionRefs.education} className="min-h-screen py-20 px-8 relative">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-5xl font-bold mb-4 text-center bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+            Education
+          </h2>
+          <p className="text-center text-gray-400 mb-16 text-lg">
+            My academic background and qualifications
+          </p>
+
+          <div className="space-y-8">
+            {/* Post Graduate */}
+            <div className="relative group">
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl blur-xl opacity-0 group-hover:opacity-40 transition-opacity duration-500"></div>
+              <div className="relative p-8 bg-gray-800/50 backdrop-blur-xl rounded-2xl border border-purple-500/20 hover:border-purple-500/50 transition-all">
+                <div className="flex items-start gap-6">
+                  <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center flex-shrink-0">
+                    <Award size={32} />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold mb-2">Master of Science in Microbiology (MSc)</h3>
+                    <p className="text-purple-400 mb-3">Bharathiar University • 2021 - 2023 • Percentage: 83%</p>
+                    {/* <p className="text-gray-400 leading-relaxed">
+                      Advanced studies in Software Engineering, Database Management, and Artificial Intelligence. 
+                      Specialized in full-stack development and machine learning applications.
+                    </p> */}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Under Graduate */}
+            <div className="relative group">
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-blue-500 rounded-2xl blur-xl opacity-0 group-hover:opacity-40 transition-opacity duration-500"></div>
+              <div className="relative p-8 bg-gray-800/50 backdrop-blur-xl rounded-2xl border border-purple-500/20 hover:border-purple-500/50 transition-all">
+                <div className="flex items-start gap-6">
+                  <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-purple-500 to-blue-500 flex items-center justify-center flex-shrink-0">
+                    <Award size={32} />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold mb-2">Bachelor of Science in Microbiology (BSc)</h3>
+                    <p className="text-purple-400 mb-3">Bharathiar University • 2018 - 2021 • Percentage: 80%</p>
+                    {/* <p className="text-gray-400 leading-relaxed">
+                      Completed comprehensive coursework in Computer Science fundamentals, programming languages, 
+                      web development, and database management systems.
+                    </p> */}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* HSC */}
+            <div className="relative group">
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl blur-xl opacity-0 group-hover:opacity-40 transition-opacity duration-500"></div>
+              <div className="relative p-8 bg-gray-800/50 backdrop-blur-xl rounded-2xl border border-blue-500/20 hover:border-blue-500/50 transition-all">
+                <div className="flex items-start gap-6">
+                  <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center flex-shrink-0">
+                    <Award size={32} />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold mb-2">Higher Secondary Certificate (HSC)</h3>
+                    <p className="text-purple-400 mb-3">Kongu Vellalar Matriculation Higher Secondary School • 2016 - 2018 • Percentage: 90%</p>
+                    {/* <p className="text-purple-400 mb-3"></p> */}
+                    {/* <p className="text-gray-400 leading-relaxed">
+                      Focused on Biology, Chemistry, Mathematics, and Physics. Built strong analytical and 
+                      problem-solving skills with emphasis on programming fundamentals.
+                    </p> */}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* SSLC */}
+            <div className="relative group">
+              <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-teal-500 rounded-2xl blur-xl opacity-0 group-hover:opacity-40 transition-opacity duration-500"></div>
+              <div className="relative p-8 bg-gray-800/50 backdrop-blur-xl rounded-2xl border border-green-500/20 hover:border-green-500/50 transition-all">
+                <div className="flex items-start gap-6">
+                  <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-green-500 to-teal-500 flex items-center justify-center flex-shrink-0">
+                    <Award size={32} />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold mb-2">Secondary School Leaving Certificate (SSLC)</h3>
+                    <p className="text-purple-400 mb-3">Komarappa Sengunthar Girls High School • 2015 - 2016 • Percentage: 95%</p>
+                    {/* <p className="text-gray-400 leading-relaxed">
+                      Completed secondary education with strong foundation in Mathematics, Science, and basic 
+                      computer applications. Developed early interest in technology and programming.
+                    </p> */}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      {/* Certifications */}
+      {/* <section ref={sectionRefs.certifications} className="min-h-screen py-20 px-8 relative">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-5xl font-bold mb-4 text-center bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+            Certifications
+          </h2>
+          <p className="text-center text-gray-400 mb-16 text-lg">
+            Professional certifications and achievements
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="relative group">
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl blur-xl opacity-0 group-hover:opacity-40 transition-opacity duration-500"></div>
+              <div className="relative p-8 bg-gray-800/50 backdrop-blur-xl rounded-2xl border border-purple-500/20 hover:border-purple-500/50 transition-all h-full flex flex-col">
+                <div className="flex items-start gap-6">
+                  <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center flex-shrink-0">
+                    <Award size={32} />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold mb-2">AWS Certified Developer</h3>
+                    <p className="text-purple-400 mb-3">Amazon Web Services • 2024</p>
+                    <p className="text-gray-400 leading-relaxed">
+                      Certified in developing and maintaining applications on AWS platform.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="relative group">
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl blur-xl opacity-0 group-hover:opacity-40 transition-opacity duration-500"></div>
+              <div className="relative p-8 bg-gray-800/50 backdrop-blur-xl rounded-2xl border border-blue-500/20 hover:border-blue-500/50 transition-all h-full flex flex-col">
+                <div className="flex items-start gap-6">
+                  <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center flex-shrink-0">
+                    <Brain size={32} />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold mb-2">Machine Learning Specialization</h3>
+                    <p className="text-purple-400 mb-3">Coursera • 2023</p>
+                    <p className="text-gray-400 leading-relaxed">
+                      Completed comprehensive ML course covering supervised and unsupervised learning.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="relative group">
+              <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-teal-500 rounded-2xl blur-xl opacity-0 group-hover:opacity-40 transition-opacity duration-500"></div>
+              <div className="relative p-8 bg-gray-800/50 backdrop-blur-xl rounded-2xl border border-green-500/20 hover:border-green-500/50 transition-all h-full flex flex-col">
+                <div className="flex items-start gap-6">
+                  <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-green-500 to-teal-500 flex items-center justify-center flex-shrink-0">
+                    <Code size={32} />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold mb-2">Full Stack Web Development</h3>
+                    <p className="text-purple-400 mb-3">Platform Name • 2023</p>
+                    <p className="text-gray-400 leading-relaxed">
+                      Mastered React, Django, and modern web development best practices.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="relative group">
+              <div className="absolute inset-0 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-2xl blur-xl opacity-0 group-hover:opacity-40 transition-opacity duration-500"></div>
+              <div className="relative p-8 bg-gray-800/50 backdrop-blur-xl rounded-2xl border border-yellow-500/20 hover:border-yellow-500/50 transition-all h-full flex flex-col">
+                <div className="flex items-start gap-6">
+                  <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-yellow-500 to-orange-500 flex items-center justify-center flex-shrink-0">
+                    <Database size={32} />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold mb-2">Database Administration</h3>
+                    <p className="text-purple-400 mb-3">Certification Body • 2024</p>
+                    <p className="text-gray-400 leading-relaxed">
+                      Expertise in PostgreSQL, MySQL optimization and database design.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> */}
+
+      {/* Experience */}
+      {/* <section ref={sectionRefs.experience} className="min-h-screen py-20 px-8"></section> */}
+
       {/* Contact */}
       <section ref={sectionRefs.contact} className="min-h-screen py-20 px-8 relative">
         <div className="max-w-4xl mx-auto">
@@ -485,15 +672,15 @@ border-yellow-500/20 hover:border-yellow-500/50 transition-all h-full flex flex-
 
           </div>
 
-          <div className="text-center pt-12 border-t border-gray-700/50">
+          {/* <div className="text-center pt-12 border-t border-gray-700/50">
             <p className="text-gray-400">
               © 2024 Sandhiya. Built with React & Tailwind CSS
             </p>
             <p className="text-gray-500 text-sm mt-2">
             Thoughtfully designed and developed with passion.
               {/* Crafted with passion and lots of ☕ */}
-            </p>
-          </div>
+            {/* </p> */}
+          {/* </div> */} 
 
         </div>
       </section>
