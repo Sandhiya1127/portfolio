@@ -317,7 +317,8 @@ duration-300 transform hover:-translate-y-2 h-full">
       <section ref={sectionRefs.experience} className="min-h-screen py-20 px-8">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-5xl font-bold mb-4 text-center bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-            Experience & Achievements
+            Experience 
+            {/* Experience & Achievements */}
           </h2>
           <p className="text-center text-gray-400 mb-16 text-lg">
             My professional journey and milestones
